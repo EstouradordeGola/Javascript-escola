@@ -1,15 +1,21 @@
-//declaração de variáveis
+let resposta = document.getElementById ('resposta');
 
-let quantidade = 0;
-let total = 0;
-
-function calculafelipe(){
-//promp para entrada de dados
-
-quantidade = parseInt(prompt("Digite o numero de vezes que o Felipe nos deixou sem oxigenio "));
+let computador = 0;
+let jogador = 0;
 
 
-total = total + quantidade;
+let aleatorio = Math.random();
+let min = 1;
+let max = 100;
+let dif = max - min;
+computador = min + Math.trunc(dif * aleatorio);
 
-alert(total);
+
+function Adivinhar(){
+    jogador = prompt("Qual o seu palpite?")
+    if(resultado <= aleatorio){
+        numero.innerHTML = "O número é um pouco maior!"
+    } else { 
+        numero.inner = "O número é um pouco menor!"
+    }
 }
