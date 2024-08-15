@@ -14,7 +14,7 @@ computador = min + Math.trunc(dif * aleatorio);
 function Adivinhar(){
     jogador = prompt("Qual o seu palpite?")
     if(computador == jogador){
-        resposta.innerHTML += "<p1>PARABÉNS!!  Você acertou! Eu tinha sorteado o valor " + computador + "</p1>"
+        resposta.innerHTML += "<p>PARABÉNS!!  Você acertou! Eu tinha sorteado o valor " + computador + "</p>"
     document.getElementById('botao').style.visibility = "hidden";
     } else if(computador < jogador){
         resposta.innerHTML += "<p>Você falou " + jogador + ".O meu número é um pouco menor!</p>"
