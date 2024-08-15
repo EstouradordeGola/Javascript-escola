@@ -16,7 +16,10 @@ function Adivinhar(){
     if(computador == jogador){
         resposta.innerHTML += "<p>PARABÉNS!!  Você acertou! Eu tinha sorteado o valor " + computador + "</p>"
     document.getElementById('botao').style.visibility = "hidden";
-    } else if(computador < jogador){
+    } else if(max < jogador){
+        resposta.innerHTML += "<p>DIGITA UM NÚMERO MENOR QUE 100 SEU MERDA.<p>"
+    }
+  else if(computador < jogador){
         resposta.innerHTML += "<p>Você falou " + jogador + ".O meu número é um pouco menor!</p>"
     } 
       else if(computador > jogador){
